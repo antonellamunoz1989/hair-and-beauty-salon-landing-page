@@ -1,0 +1,170 @@
+body{
+    background-color: #0F0F0F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+header > img {
+    display: block;
+    margin-inline: auto;
+    margin-block: 2rem;
+    width: 20rem;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem; /* controls spacing between nav items (better than using padding on links) */
+    list-style: none;
+    background-color:#1A1A1A;
+    padding-block: 1rem;
+    padding-inline: 3rem;
+    border-radius: 1rem;
+    border: 0.0625rem solid #2A2A2A;
+}
+
+.navbar a {
+    color:  #F5F5F5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: #C95A43;
+    opacity: 0.85; /* subtle transparency for smoother, softer hover effect */
+}
+
+.banner {
+    background-image: url(images/hero-banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 62vh;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: white;
+    margin-block: 2rem;
+
+    display: flex;
+    align-items: center; /* This centers elements vertically inside the banner in this case */
+}
+
+.banner h1 {
+     max-width: 30rem;
+     line-height: 1.1;
+}
+
+
+.banner p {
+    max-width: 25rem;
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #B5523D;
+    color: #F5F5F5;
+
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #8F3E2D;
+    transform: translateY(-2px); /* lift the button slightly up on hover */
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #B5523D;
+    color:  #0F0F0F;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: 1.5rem; /* controls vertical spacing between elements inside the card */
+}
+
+.card > img { /* direct child selector */
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 10rem; /* fixed height keeps all card images uniform and prevents uneven card layout (auto would make cards different heights) */
+    border-radius: 1rem;
+}
+
+.card > h2 {
+    margin: 0;
+}
+
+.card > p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card > a {
+    margin-top: auto; /* pushes the link to the bottom of the card, keeping all CTAs aligned across cards */
+    align-self: flex-start; /* aligns the link to the left inside the flex container */
+    font-weight: 500;
+    text-decoration: underline;
+    color:  #F5F5F5;
+    transition: color 0.2s ease; /* animates the color change on hover */
+}
+
+.card > a:hover {
+    color:  #0F0F0F;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* pushes items apart */
+    align-items: center; /* keeps items aligned at the same vertical level inside the footer in this case */
+    margin-top: 3rem;
+    margin-inline: -3rem;
+    padding-inline: 3rem;
+    color: white;
+}
+
+footer div {
+   padding: 0; /* prevent padding from making footer content appear centered */
+}
+
+footer div:last-child {
+    margin-left: auto;
+    text-align: right;
+}
+
+footer div:last-child p {
+    border-top: 0.1rem solid rgb(243, 241, 241);
+    padding-top: 0.5rem; /* reduced spacing so line feels attached */
+    width: 25rem;
+    margin: 0;
+}
+
+footer img {
+    width: 10rem;
+    height: auto;
+}
+
