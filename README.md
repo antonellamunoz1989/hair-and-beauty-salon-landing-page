@@ -26,8 +26,8 @@ The course provided guidance and project requirements, while I independently imp
 
 ### Links
 
-- GitHub Repository URL: [GitHub Repository](https://github.com/antonellamunoz1989/hair-and-beauty-salon-landing-page)
-- Live Site URL: [GitHub Pages](https://antonellamunoz1989.github.io/hair-and-beauty-salon-landing-page/)
+- GitHub Repository URL: [GitHub Repository](https://github.com/antonellamunoz/hair-and-beauty-salon-landing-page)
+- Live Site URL: [GitHub Pages](https://antonellamunoz.github.io/hair-and-beauty-salon-landing-page/)
 
 ## My Process
 
